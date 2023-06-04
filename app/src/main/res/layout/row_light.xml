@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="lightRowModel" type="com.asapplication.app.modules.one.data.model.LightRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearMainlight"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnmainlight"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.94" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMainlight"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.01" android:singleLine="true"
+                android:text="@{lightRowModel.txtMainlight}"
+                style="@style/txtManroperegular12" tools:text="@string/lbl_main_light"/>
+            <com.google.android.material.slider.Slider
+                android:id="@+id/seekBarSlider"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent" android:value="68"
+                android:valueFrom="0" android:valueTo="100"
+                app:labelBehavior="gone"
+                app:thumbColor="@color/gray_100"
+                app:thumbRadius="@dimen/_7pxh" app:trackColorInactive="@color/orange_300"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageNotification"
+            android:layout_height="@dimen/_20pxh"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_width="@dimen/_17pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_notification"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_notification"/>
+    </LinearLayout>
+</layout>
