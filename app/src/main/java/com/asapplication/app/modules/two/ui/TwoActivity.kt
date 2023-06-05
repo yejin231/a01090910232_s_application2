@@ -1,5 +1,5 @@
 package com.asapplication.app.modules.two.ui
-
+/*
 import android.view.View
 import androidx.activity.viewModels
 import com.asapplication.app.R
@@ -48,3 +48,4 @@ class TwoActivity : BaseActivity<ActivityTwoBinding>(R.layout.activity_two) {
 
   }
 }
+*/

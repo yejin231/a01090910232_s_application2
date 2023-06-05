@@ -1,3 +1,4 @@
+/*
 package com.asapplication.app.modules.one.ui
 
 import android.view.View
@@ -51,3 +52,4 @@ class OneActivity : BaseActivity<ActivityOneBinding>(R.layout.activity_one) {
 
   }
 }
+*/
