@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+        android:orientation="vertical">
 
 
     <!--Added Time picker just to pick the alarm time-->
@@ -13,23 +13,42 @@
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="wrap_content"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         android:layout_gravity="center" />
 
+    <FrameLayout android:id="@+id/frameStackfiftysix"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/_304pxv"
+        android:layout_marginEnd="@dimen/_12pxh"
+        android:layout_marginStart="@dimen/_12pxh"
+        android:layout_marginTop="@dimen/_11pxv"
+        android:layout_width="@dimen/_280pxh" style="@style/groupStylewhite_A700cornerRadius">
 
+        <ImageView
+            android:id="@+id/imageFiftySix"
+            cornerRadius="@{@dimen/_12pxh}"
+            imageRes="@{@drawable/img__504x330}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img__504x330" />
+    </FrameLayout>
 
-
+    </LinearLayout>
+</layout>
 
     <!--Added Toggle Button to set the alarm on or off-->
     <!--ByDefault toggleButton is set to false-->
-    <ToggleButton
+    <!--<ToggleButton
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:checked="false"
-        android:onClick="OnToggleClicked" />
+        android:onClick="OnToggleClicked" />    -->
 
     <!--"OnToggleClicked" method will be implemented in MainActivity.java -->
 
@@ -165,5 +184,5 @@
             style="@style/txtSolidRounded_1" tools:text="@string/lbl27"/>
      -->
 
-</LinearLayout>
+
 
